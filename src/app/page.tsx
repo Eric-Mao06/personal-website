@@ -48,7 +48,7 @@ export default function Home() {
 
           <Link href="https://waterloo.uselinkd.com" target="_blank" rel="noopener noreferrer" className="block">
             <div className="flex justify-between py-3 border-t border-neutral-200 hover:bg-neutral-50 transition-colors">
-              <div className="font-medium text-black flex items-center min-w-[140px] flex-grow">Serendipity <ArrowUpRight className="ml-1" size={16} /></div>
+              <div className="font-medium text-black flex items-center whitespace-nowrap mr-4">Serendipity <ArrowUpRight className="ml-1" size={16} /></div>
               <div className="max-w-xs text-right">
                 <p>sms based superconnector</p>
               </div>
@@ -57,7 +57,7 @@ export default function Home() {
 
           <Link href="https://github.com/Eric-Mao06/AiWantItThatWay" target="_blank" rel="noopener noreferrer" className="block">
             <div className="flex justify-between py-3 border-t border-neutral-200 hover:bg-neutral-50 transition-colors">
-              <div className="font-medium text-black flex items-center min-w-[180px] flex-grow">AiWantItThatWay <ArrowUpRight className="ml-1" size={16} /></div>
+              <div className="font-medium text-black flex items-center whitespace-nowrap mr-4">AiWantItThatWay <ArrowUpRight className="ml-1" size={16} /></div>
               <div className="max-w-xs text-right">
                 <p>generalized monte carlo next action prediction</p>            
               </div>
@@ -66,7 +66,7 @@ export default function Home() {
 
           <Link href="https://berkeley.uselinkd.com" target="_blank" rel="noopener noreferrer" className="block">
             <div className="flex justify-between py-3 border-t border-neutral-200 hover:bg-neutral-50 transition-colors">
-              <div className="font-medium text-black flex items-center min-w-[140px] flex-grow">Linkd Alums <ArrowUpRight className="ml-1" size={16} /></div>
+              <div className="font-medium text-black flex items-center whitespace-nowrap mr-4">Linkd Alums <ArrowUpRight className="ml-1" size={16} /></div>
               <div className="max-w-xs text-right">
                 <p>perfect search over ~300k linkedin profiles</p>
                 <p className="text-sm text-neutral-500 mt-1 text-right">5 schools, 120k+ Users</p>
@@ -76,7 +76,7 @@ export default function Home() {
 
           <Link href="/carbon_credits.pdf" target="_blank" rel="noopener noreferrer" className="block">
             <div className="flex justify-between py-3 border-t border-neutral-200 hover:bg-neutral-50 transition-colors">
-              <div className="font-medium text-black flex items-center min-w-[120px] flex-grow">Big Data <ArrowUpRight className="ml-1" size={16} /></div>
+              <div className="font-medium text-black flex items-center whitespace-nowrap mr-4">Big Data <ArrowUpRight className="ml-1" size={16} /></div>
               <div className="max-w-xs text-right">
                 <p>machine learning carbon credit allocation</p>
                 <p className="text-sm text-neutral-500 mt-1 text-right">best poster @ ICCC</p>
