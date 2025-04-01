@@ -75,7 +75,7 @@ export default function Home() {
             </div>
           </Link>
 
-          <Link href="/personal-website/carbon_credits.pdf" target="_blank" rel="noopener noreferrer" className="block">
+          <Link href="/carbon_credits.pdf" target="_blank" rel="noopener noreferrer" className="block">
             <div className="flex justify-between py-3 border-t border-neutral-200 hover:bg-neutral-50 transition-colors">
               <div className="font-medium text-black flex items-center whitespace-nowrap mr-4">Big Data <ArrowUpRight className="ml-1" size={16} /></div>
               <div className="max-w-xs text-right">
@@ -100,7 +100,7 @@ export default function Home() {
 
       <div className="layout-md mt-10 mb-2 w-full">
         <Image
-          src="/personal-website/Photo.jpeg"
+          src="/Photo.jpeg"
           alt="Eric Mao's profile"
           width={1000}
           height={1000}

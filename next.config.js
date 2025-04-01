@@ -2,7 +2,6 @@
 const nextConfig = {
   /* config options here */
   output: 'export', // Enable static exports
-  basePath: process.env.NODE_ENV === 'production' ? '/personal-website' : '',
   eslint: {
     // we use biome for linting
     ignoreDuringBuilds: true,
