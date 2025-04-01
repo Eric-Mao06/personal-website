@@ -8,8 +8,11 @@ const geistSans = GeistSans;
 const geistMono = GeistMono;
 
 export const metadata: Metadata = {
-  title: "Eric Mao",
+  title: "Eric Mao Portfolio",
   description: "Personal Portfolio",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
