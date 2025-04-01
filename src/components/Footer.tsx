@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export function Footer() {
   return (
-    <footer className="layout-md mt-20 text-lg flex flex-col">
+    <footer className="layout-md mt-8 mb-10 text-lg flex flex-col">
       <div className="flex justify-between items-center py-1 border-t border-neutral-200">
         <span>Twitter</span>
         <Link
@@ -10,6 +10,15 @@ export function Footer() {
           className="link"
         >
           @EricMao06
+        </Link>
+      </div>
+      <div className="flex justify-between items-center py-1 border-t border-neutral-200">
+        <span>LinkedIn</span>
+        <Link
+          href="https://www.linkedin.com/in/eric-mao/"
+          className="link"
+        >
+          @Eric-Mao
         </Link>
       </div>
       <div className="flex justify-between items-center py-1 border-t border-neutral-200">
