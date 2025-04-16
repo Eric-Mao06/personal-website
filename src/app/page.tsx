@@ -75,7 +75,7 @@ export default function Home() {
             </div>
           </Link>
 
-          <Link href="/carbon_credits.pdf" target="_blank" rel="noopener noreferrer" className="block">
+          <a href="/carbon_credits.pdf" target="_blank" rel="noopener noreferrer" className="block">
             <div className="flex justify-between py-3 border-t border-neutral-200 hover:bg-neutral-50 transition-colors">
               <div className="font-medium text-black flex items-center whitespace-nowrap mr-4">Big Data <ArrowUpRight className="ml-1" size={16} /></div>
               <div className="max-w-xs text-right">
@@ -83,7 +83,7 @@ export default function Home() {
                 <p className="text-sm text-neutral-500 mt-1 text-right">best poster @ ICCC</p>
               </div>
             </div>
-          </Link>
+          </a>
 
           <div className="border-t border-neutral-200 pt-4 mt-2">
             <h3 className="font-medium text-black mb-3">Ship to Yap Ratio:</h3>
@@ -99,9 +99,11 @@ export default function Home() {
       </div>
 
       <div className="layout-md mt-10 mb-2 w-full">
-        <img
+        <Image
           src="/Photo.jpg"
           alt="Eric Mao's profile"
+          width={1200}
+          height={800}
           className="rounded-lg w-full h-auto object-cover"
         />
       </div>
