@@ -100,7 +100,7 @@ export default function Home() {
 
       <div className="layout-md mt-10 mb-2 w-full">
         <Image
-          src="/Photo.jpg"
+          src="/Photo.png"
           alt="Eric Mao's profile"
           width={1200}
           height={800}
