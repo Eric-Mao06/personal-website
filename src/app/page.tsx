@@ -99,13 +99,10 @@ export default function Home() {
       </div>
 
       <div className="layout-md mt-10 mb-2 w-full">
-        <Image
-          src="/Photo.jpg"
+        <img
+          src="./Photo.jpg"
           alt="Eric Mao's profile"
-          width={1000}
-          height={1000}
           className="rounded-lg w-full h-auto object-cover"
-          priority
         />
       </div>
     </PageLayout>

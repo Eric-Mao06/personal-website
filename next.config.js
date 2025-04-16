@@ -13,6 +13,7 @@ const nextConfig = {
       "images.unsplash.com",
       "ext.same-assets.com",
       "ugc.same-assets.com",
+      "ghchart.rshah.org"
     ],
     remotePatterns: [
       {
@@ -35,11 +36,17 @@ const nextConfig = {
         hostname: "ugc.same-assets.com",
         pathname: "/**",
       },
+      {
+        protocol: "https",
+        hostname: "ghchart.rshah.org",
+        pathname: "/**",
+      },
     ],
   },
   typescript: {
     ignoreBuildErrors: true,
   },
+  assetPrefix: '.',
 };
 
 module.exports = nextConfig;
