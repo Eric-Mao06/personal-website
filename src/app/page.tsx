@@ -106,7 +106,6 @@ export default function Home() {
           height={1000}
           className="rounded-lg w-full h-auto object-cover"
           priority
-          unoptimized
         />
       </div>
     </PageLayout>
