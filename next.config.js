@@ -46,7 +46,7 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
-  assetPrefix: '.',
+  assetPrefix: '/',
 };
 
 module.exports = nextConfig;
