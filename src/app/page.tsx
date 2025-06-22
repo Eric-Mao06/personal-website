@@ -35,7 +35,7 @@ export default function Home() {
         </div>
         <div className="pt-1">
           <p>
-            I am currently increasing the serendipity of the world @ <Link href="https://linkd.inc" className="link">Linkd</Link>
+            I am currently increasing the serendipity of the world @ <Link href="https://clado.ai" className="link">Clado</Link>
           </p>
         </div>
         <div className="pt-4">
@@ -67,7 +67,7 @@ export default function Home() {
 
           <Link href="https://berkeley.uselinkd.com" target="_blank" rel="noopener noreferrer" className="block">
             <div className="flex justify-between py-3 border-t border-neutral-200 hover:bg-neutral-50 transition-colors">
-              <div className="font-medium text-black flex items-center whitespace-nowrap mr-4">Linkd Alums <ArrowUpRight className="ml-1" size={16} /></div>
+              <div className="font-medium text-black flex items-center whitespace-nowrap mr-4">Linkd <ArrowUpRight className="ml-1" size={16} /></div>
               <div className="max-w-xs text-right">
                 <p>perfect search over ~300k linkedin profiles</p>
                 <p className="text-sm text-neutral-500 mt-1 text-right">5 schools, 120k+ Users</p>
