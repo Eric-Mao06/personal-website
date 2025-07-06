@@ -76,7 +76,7 @@ export default function Home() {
           </Link>
 
           <a href="/carbon_credits.pdf" target="_blank" rel="noopener noreferrer" className="block">
-            <div className="flex justify-between py-3 border-t border-neutral-200 hover:bg-neutral-50 transition-colors">
+            <div className="flex justify-between py-3 border-t border-b border-neutral-200 hover:bg-neutral-50 transition-colors">
               <div className="font-medium text-black flex items-center whitespace-nowrap mr-4">Big Data <ArrowUpRight className="ml-1" size={16} /></div>
               <div className="max-w-xs text-right">
                 <p>machine learning carbon credit allocation</p>
@@ -84,6 +84,34 @@ export default function Home() {
               </div>
             </div>
           </a>
+        </div>
+        
+        <div className="pt-4">
+          <p className="mb-4">Angel investments (mostly friends):</p>
+
+          <Link href="https://blueprint.mov" target="_blank" rel="noopener noreferrer" className="block">
+            <div className="flex justify-between py-3 border-t border-neutral-200 hover:bg-neutral-50 transition-colors">
+              <div className="font-medium text-black flex items-center whitespace-nowrap mr-4">Blueprint <ArrowUpRight className="ml-1" size={16} /></div>
+              <div className="max-w-xs text-right">
+                <p>ai ads</p>
+                <p className="text-sm text-neutral-500 mt-1 text-right">first check</p>
+              </div>
+            </div>
+          </Link>
+
+          <a href="https://a37.ai" target="_blank" rel="noopener noreferrer" className="block">
+            <div className="flex justify-between py-3 border-t border-neutral-200 hover:bg-neutral-50 transition-colors">
+              <div className="font-medium text-black flex items-center whitespace-nowrap mr-4">a37 <ArrowUpRight className="ml-1" size={16} /></div>
+              <div className="max-w-xs text-right">
+                <p>cursor for devops</p>
+                <p className="text-sm text-neutral-500 mt-1 text-right">seed</p>
+              </div>
+            </div>
+          </a>
+
+          
+
+          
 
           <div className="border-t border-neutral-200 pt-4 mt-2">
             <h3 className="font-medium text-black mb-3">Ship to Yap Ratio:</h3>
