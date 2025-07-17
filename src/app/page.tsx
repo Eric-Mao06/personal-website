@@ -89,9 +89,29 @@ export default function Home() {
         <div className="pt-4">
           <p className="mb-4">Angel investments (mostly friends):</p>
 
+          <Link href="https://telora.com" target="_blank" rel="noopener noreferrer" className="block">
+            <div className="flex justify-between py-3 border-t border-neutral-200 hover:bg-neutral-50 transition-colors">
+              <div className="font-medium text-black flex items-center whitespace-nowrap mr-4">telora <ArrowUpRight className="ml-1" size={16} /></div>
+              <div className="max-w-xs text-right">
+                <p>believing in my first believers</p>
+                <p className="text-sm text-neutral-500 mt-1 text-right">fund I</p>
+              </div>
+            </div>
+          </Link>
+
+          <Link href="https://shofo.ai" target="_blank" rel="noopener noreferrer" className="block">
+            <div className="flex justify-between py-3 border-t border-neutral-200 hover:bg-neutral-50 transition-colors">
+              <div className="font-medium text-black flex items-center whitespace-nowrap mr-4">shofo <ArrowUpRight className="ml-1" size={16} /></div>
+              <div className="max-w-xs text-right">
+                <p>ai search over consumer sentiment</p>
+                <p className="text-sm text-neutral-500 mt-1 text-right">pre-seed</p>
+              </div>
+            </div>
+          </Link>
+
           <Link href="https://blueprint.mov" target="_blank" rel="noopener noreferrer" className="block">
             <div className="flex justify-between py-3 border-t border-neutral-200 hover:bg-neutral-50 transition-colors">
-              <div className="font-medium text-black flex items-center whitespace-nowrap mr-4">Blueprint <ArrowUpRight className="ml-1" size={16} /></div>
+              <div className="font-medium text-black flex items-center whitespace-nowrap mr-4">blueprint <ArrowUpRight className="ml-1" size={16} /></div>
               <div className="max-w-xs text-right">
                 <p>ai ads</p>
                 <p className="text-sm text-neutral-500 mt-1 text-right">first check</p>
@@ -108,10 +128,6 @@ export default function Home() {
               </div>
             </div>
           </a>
-
-          
-
-          
 
           <div className="border-t border-neutral-200 pt-4 mt-2">
             <h3 className="font-medium text-black mb-3">Ship to Yap Ratio:</h3>
