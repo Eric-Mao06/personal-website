@@ -33,10 +33,10 @@ export function Footer() {
       <div className="flex justify-between items-center py-1 border-t border-neutral-200">
         <span>Email</span>
         <Link
-          href="mailto:ericmao0606@gmail.com"
+          href="mailto:eric@clado.ai"
           className="link"
         >
-          ericmao0606@gmail.com
+          eric@clado.ai
         </Link>
       </div>
     </footer>
