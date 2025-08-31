@@ -47,14 +47,14 @@ export default function Home() {
         <div className="pt-4">
           <p className="mb-4">Some cool projects:</p>
 
-          <Link href="https://waterloo.uselinkd.com" target="_blank" rel="noopener noreferrer" className="block">
-            <div className="flex justify-between py-3 border-t border-neutral-200 hover:bg-neutral-50 transition-colors">
-              <div className="font-medium text-black flex items-center whitespace-nowrap mr-4">Serendipity <ArrowUpRight className="ml-1" size={16} /></div>
+          <div className="block">
+            <div className="flex justify-between py-3 border-t border-neutral-200">
+              <div className="font-medium text-black flex items-center whitespace-nowrap mr-4">Serendipity</div>
               <div className="max-w-xs text-right">
                 <p>sms based superconnector</p>
               </div>
             </div>
-          </Link>
+          </div>
 
           <Link href="https://github.com/Eric-Mao06/AiWantItThatWay" target="_blank" rel="noopener noreferrer" className="block">
             <div className="flex justify-between py-3 border-t border-neutral-200 hover:bg-neutral-50 transition-colors">
@@ -89,15 +89,6 @@ export default function Home() {
         <div className="pt-4">
           <p className="mb-4">Angel investments (mostly friends):</p>
 
-          <Link href="https://telora.com" target="_blank" rel="noopener noreferrer" className="block">
-            <div className="flex justify-between py-3 border-t border-neutral-200 hover:bg-neutral-50 transition-colors">
-              <div className="font-medium text-black flex items-center whitespace-nowrap mr-4">telora <ArrowUpRight className="ml-1" size={16} /></div>
-              <div className="max-w-xs text-right">
-                <p>believing in my first believers</p>
-                <p className="text-sm text-neutral-500 mt-1 text-right">fund I</p>
-              </div>
-            </div>
-          </Link>
 
           <Link href="https://shofo.ai" target="_blank" rel="noopener noreferrer" className="block">
             <div className="flex justify-between py-3 border-t border-neutral-200 hover:bg-neutral-50 transition-colors">
@@ -129,16 +120,6 @@ export default function Home() {
             </div>
           </a>
 
-          <div className="border-t border-neutral-200 pt-4 mt-2">
-            <h3 className="font-medium text-black mb-3">Ship to Yap Ratio:</h3>
-            <div className="w-full overflow-x-auto">
-              <img 
-                src="https://ghchart.rshah.org/Eric-Mao06" 
-                alt="Eric-Mao06's Github contribution chart" 
-                className="w-full"
-              />
-            </div>
-          </div>
         </div>
       </div>
 
