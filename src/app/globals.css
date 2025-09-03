@@ -34,7 +34,8 @@
     @apply border-border;
   }
   body {
-    @apply bg-white text-neutral-600 font-normal text-base antialiased;
+    @apply text-neutral-600 font-normal text-base antialiased;
+    background-color: #f5f3f0;
   }
   em {
     font-style: italic;

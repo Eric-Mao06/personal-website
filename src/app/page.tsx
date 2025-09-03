@@ -5,10 +5,11 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { useState, useEffect } from 'react';
-import { ArrowUpRight } from 'lucide-react';
+import { ArrowUpRight, Plus } from 'lucide-react';
 
 export default function Home() {
   const [age, setAge] = useState<string>('0');
+  const [expandedImage, setExpandedImage] = useState<number>(0);
 
   useEffect(() => {
     const calculateAge = () => {
@@ -35,7 +36,7 @@ export default function Home() {
         </div>
         <div className="pt-1">
           <p>
-            I am currently increasing the serendipity of the world @ <Link href="https://clado.ai" className="link">Clado</Link>
+            Currently CEO @ <Link href="https://clado.ai" className="link">Clado</Link>
           </p>
         </div>
         <div className="pt-4">
@@ -87,7 +88,7 @@ export default function Home() {
         </div>
         
         <div className="pt-4">
-          <p className="mb-4">Angel investments (mostly friends):</p>
+          <p className="mb-4">Angel investments (friends):</p>
 
 
           <Link href="https://shofo.ai" target="_blank" rel="noopener noreferrer" className="block">
@@ -124,13 +125,31 @@ export default function Home() {
       </div>
 
       <div className="layout-md mt-10 mb-2 w-full">
-        <Image
-          src="/Photo.png"
-          alt="Eric Mao's profile"
-          width={1200}
-          height={800}
-          className="rounded-lg w-full h-auto object-cover"
-        />
+        <div className="flex gap-4 h-80">
+          {[0, 1, 2].map((index) => (
+            <div
+              key={index}
+              className={`relative cursor-pointer rounded-lg overflow-hidden transition-all duration-300 ${
+                expandedImage === index 
+                  ? 'flex-[3]' 
+                  : 'flex-[0.5] opacity-80 hover:opacity-100'
+              }`}
+              onClick={() => setExpandedImage(index)}
+            >
+              <Image
+                src={index === 0 ? "/Photo.png" : index === 1 ? "/Photo2.jpg" : "/Photo3.jpg"}
+                alt={index === 0 ? "Eric Mao's profile" : index === 1 ? "Clado team photo" : "Presentation photo"}
+                fill
+                className="object-cover object-center"
+              />
+              {expandedImage !== index && (
+                <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
+                  <Plus size={24} className="text-white" />
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
       </div>
     </PageLayout>
   );
