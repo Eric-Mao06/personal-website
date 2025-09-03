@@ -58,7 +58,7 @@ export default function Home() {
           </div>
 
           <Link href="https://github.com/Eric-Mao06/AiWantItThatWay" target="_blank" rel="noopener noreferrer" className="block">
-            <div className="flex justify-between py-3 border-t border-neutral-200 hover:bg-neutral-50 transition-colors">
+            <div className="flex justify-between py-3 border-t border-neutral-200 hover:bg-stone-100 transition-colors">
               <div className="font-medium text-black flex items-center whitespace-nowrap mr-4">AiWantItThatWay <ArrowUpRight className="ml-1" size={16} /></div>
               <div className="max-w-xs text-right">
                 <p>generalized monte carlo next action prediction</p>            
@@ -67,7 +67,7 @@ export default function Home() {
           </Link>
 
           <Link href="https://berkeley.uselinkd.com" target="_blank" rel="noopener noreferrer" className="block">
-            <div className="flex justify-between py-3 border-t border-neutral-200 hover:bg-neutral-50 transition-colors">
+            <div className="flex justify-between py-3 border-t border-neutral-200 hover:bg-stone-100 transition-colors">
               <div className="font-medium text-black flex items-center whitespace-nowrap mr-4">Linkd <ArrowUpRight className="ml-1" size={16} /></div>
               <div className="max-w-xs text-right">
                 <p>perfect search over ~300k linkedin profiles</p>
@@ -77,7 +77,7 @@ export default function Home() {
           </Link>
 
           <a href="/carbon_credits.pdf" target="_blank" rel="noopener noreferrer" className="block">
-            <div className="flex justify-between py-3 border-t border-b border-neutral-200 hover:bg-neutral-50 transition-colors">
+            <div className="flex justify-between py-3 border-t border-b border-neutral-200 hover:bg-stone-100 transition-colors">
               <div className="font-medium text-black flex items-center whitespace-nowrap mr-4">Big Data <ArrowUpRight className="ml-1" size={16} /></div>
               <div className="max-w-xs text-right">
                 <p>machine learning carbon credit allocation</p>
@@ -92,7 +92,7 @@ export default function Home() {
 
 
           <Link href="https://shofo.ai" target="_blank" rel="noopener noreferrer" className="block">
-            <div className="flex justify-between py-3 border-t border-neutral-200 hover:bg-neutral-50 transition-colors">
+            <div className="flex justify-between py-3 border-t border-neutral-200 hover:bg-stone-100 transition-colors">
               <div className="font-medium text-black flex items-center whitespace-nowrap mr-4">shofo <ArrowUpRight className="ml-1" size={16} /></div>
               <div className="max-w-xs text-right">
                 <p>ai search over consumer sentiment</p>
@@ -102,7 +102,7 @@ export default function Home() {
           </Link>
 
           <Link href="https://blueprint.mov" target="_blank" rel="noopener noreferrer" className="block">
-            <div className="flex justify-between py-3 border-t border-neutral-200 hover:bg-neutral-50 transition-colors">
+            <div className="flex justify-between py-3 border-t border-neutral-200 hover:bg-stone-100 transition-colors">
               <div className="font-medium text-black flex items-center whitespace-nowrap mr-4">blueprint <ArrowUpRight className="ml-1" size={16} /></div>
               <div className="max-w-xs text-right">
                 <p>ai ads</p>
@@ -112,7 +112,7 @@ export default function Home() {
           </Link>
 
           <a href="https://a37.ai" target="_blank" rel="noopener noreferrer" className="block">
-            <div className="flex justify-between py-3 border-t border-neutral-200 hover:bg-neutral-50 transition-colors">
+            <div className="flex justify-between py-3 border-t border-neutral-200 hover:bg-stone-100 transition-colors">
               <div className="font-medium text-black flex items-center whitespace-nowrap mr-4">a37 <ArrowUpRight className="ml-1" size={16} /></div>
               <div className="max-w-xs text-right">
                 <p>cursor for devops</p>
