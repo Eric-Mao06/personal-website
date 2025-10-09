@@ -21,7 +21,7 @@ export default function Home() {
     };
 
     setAge(calculateAge());
-    
+
     const interval = setInterval(() => {
       setAge(calculateAge());
     }, 100); 
@@ -137,10 +137,12 @@ export default function Home() {
               onClick={() => setExpandedImage(index)}
             >
               <Image
-                src={index === 0 ? "/Photo.png" : index === 1 ? "/Photo2.jpg" : "/Photo3.jpg"}
+                src={index === 0 ? "/Photo.jpg" : index === 1 ? "/Photo2.jpg" : "/Photo3.jpg"}
                 alt={index === 0 ? "Eric Mao's profile" : index === 1 ? "Clado team photo" : "Presentation photo"}
                 fill
                 className="object-cover object-center"
+                priority={index === 0}
+                loading={index === 0 ? undefined : "lazy"}
               />
               {expandedImage !== index && (
                 <div className="absolute inset-0 bg-black/30 flex items-center justify-center">

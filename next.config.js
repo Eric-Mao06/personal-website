@@ -7,7 +7,8 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
   images: {
-    unoptimized: true,
+    unoptimized: true, // Required for static export
+    formats: ['image/avif', 'image/webp'],
     domains: [
       "source.unsplash.com",
       "images.unsplash.com",
