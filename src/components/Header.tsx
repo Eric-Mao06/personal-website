@@ -18,7 +18,7 @@ export function Header({ currentPage = 'home', pageTitle }: HeaderProps) {
       </h1>
       <nav className="flex space-x-5">
         <a
-          href="https://substack.com/@ericmao"
+          href="https://blog.ericmao.com/blog/"
           target="_blank"
           rel="noopener noreferrer"
           className={`hover:text-black transition-colors ${currentPage === 'writing' ? 'text-black' : 'text-neutral-500'}`}
