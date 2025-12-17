@@ -6,10 +6,10 @@ export function Footer() {
       <div className="flex justify-between items-center py-1 border-t border-neutral-200">
         <span>Twitter</span>
         <Link
-          href="https://x.com/EricMao06"
+          href="https://x.com/ericmao"
           className="link"
         >
-          @EricMao06
+          @ericmao
         </Link>
       </div>
       <div className="flex justify-between items-center py-1 border-t border-neutral-200">
