@@ -44,8 +44,12 @@
   a {
     @apply text-neutral-500 hover:text-black transition-colors;
   }
-  a.link {
+  a.link, button.link {
     @apply text-black underline underline-offset-4 decoration-1 decoration-neutral-300 hover:decoration-black transition-colors;
+  }
+  button.link {
+    @apply bg-transparent p-0 cursor-pointer;
+    font: inherit;
   }
   h1, h2, h3, h4, h5, h6 {
     @apply font-bold text-black;
