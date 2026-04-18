@@ -36,13 +36,18 @@ export default function Home() {
         </div>
         <div className="pt-1">
           <p>
-            Currently CEO @ <Link href="https://clado.ai" className="link">Clado</Link>
+            Currently CEO @ <Link href="https://freesolo.co" target="_blank" rel="noopener noreferrer" className="link">Freesolo</Link>
           </p>
         </div>
         <div className="pt-4">
           <p>
-            I previously spent one semester at UPenn M&T studying Computer Science + Business before leaving 
-            for the <Link href="https://ycombinator.com" className="link">Y Combinator</Link> X25 Batch.
+            I scaled <Link href="https://clado.ai" target="_blank" rel="noopener noreferrer" className="link">Clado</Link> to over 300k ARR selling to data labellers and recruiters before realizing our growth rate was too low and pivoting.
+          </p>
+        </div>
+        <div className="pt-4">
+          <p>
+            I previously spent one semester at UPenn M&T studying Computer Science + Business before leaving
+            for the <Link href="https://ycombinator.com" target="_blank" rel="noopener noreferrer" className="link">Y Combinator</Link> X25 Batch.
           </p>
         </div>
         <div className="pt-4">
@@ -95,8 +100,7 @@ export default function Home() {
             <div className="flex justify-between py-3 border-t border-neutral-200 hover:bg-stone-100 transition-colors">
               <div className="font-medium text-black flex items-center whitespace-nowrap mr-4">shofo <ArrowUpRight className="ml-1" size={16} /></div>
               <div className="max-w-xs text-right">
-                <p>ai search over consumer sentiment</p>
-                <p className="text-sm text-neutral-500 mt-1 text-right">pre-seed</p>
+                <p className="text-sm text-neutral-500">pre-seed</p>
               </div>
             </div>
           </Link>
@@ -105,21 +109,44 @@ export default function Home() {
             <div className="flex justify-between py-3 border-t border-neutral-200 hover:bg-stone-100 transition-colors">
               <div className="font-medium text-black flex items-center whitespace-nowrap mr-4">blueprint <ArrowUpRight className="ml-1" size={16} /></div>
               <div className="max-w-xs text-right">
-                <p>ai ads</p>
-                <p className="text-sm text-neutral-500 mt-1 text-right">first check</p>
+                <p className="text-sm text-neutral-500">first check</p>
               </div>
             </div>
           </Link>
 
-          <a href="https://a37.ai" target="_blank" rel="noopener noreferrer" className="block">
+          <Link href="https://a37.ai" target="_blank" rel="noopener noreferrer" className="block">
             <div className="flex justify-between py-3 border-t border-neutral-200 hover:bg-stone-100 transition-colors">
               <div className="font-medium text-black flex items-center whitespace-nowrap mr-4">a37 <ArrowUpRight className="ml-1" size={16} /></div>
               <div className="max-w-xs text-right">
-                <p>cursor for devops</p>
-                <p className="text-sm text-neutral-500 mt-1 text-right">seed</p>
+                <p className="text-sm text-neutral-500">seed</p>
               </div>
             </div>
-          </a>
+          </Link>
+
+          <Link href="https://photon.codes" target="_blank" rel="noopener noreferrer" className="block">
+            <div className="flex justify-between py-3 border-t border-neutral-200 hover:bg-stone-100 transition-colors">
+              <div className="font-medium text-black flex items-center whitespace-nowrap mr-4">photon codes <ArrowUpRight className="ml-1" size={16} /></div>
+              <div className="max-w-xs text-right">
+                <p className="text-sm text-neutral-500">seed</p>
+              </div>
+            </div>
+          </Link>
+
+          <Link href="https://www.trychert.com/" target="_blank" rel="noopener noreferrer" className="block">
+            <div className="flex justify-between py-3 border-t border-neutral-200 hover:bg-stone-100 transition-colors">
+              <div className="font-medium text-black flex items-center whitespace-nowrap mr-4">chert <ArrowUpRight className="ml-1" size={16} /></div>
+              <div className="max-w-xs text-right">
+                <p className="text-sm text-neutral-500">pre-seed</p>
+              </div>
+            </div>
+          </Link>
+
+          <div className="flex justify-between py-3 border-t border-b border-neutral-200">
+            <div className="font-medium text-black flex items-center whitespace-nowrap mr-4">stealth</div>
+            <div className="max-w-xs text-right">
+              <p className="text-sm text-neutral-500">pre-seed</p>
+            </div>
+          </div>
 
         </div>
       </div>
