@@ -1,11 +1,11 @@
-import Link from 'next/link';
+import Link from "next/link";
 
 interface HeaderProps {
-  currentPage?: 'home' | 'writing';
+  currentPage?: "home" | "writing";
   pageTitle?: string;
 }
 
-export function Header({ currentPage = 'home', pageTitle }: HeaderProps) {
+export function Header({ currentPage = "home", pageTitle }: HeaderProps) {
   return (
     <header className="layout-md flex justify-between items-start pt-8 pb-0">
       <h1 className="font-bold text-black text-2xl mb-2">
@@ -21,7 +21,7 @@ export function Header({ currentPage = 'home', pageTitle }: HeaderProps) {
           href="https://blog.ericmao.com/blog/"
           target="_blank"
           rel="noopener noreferrer"
-          className={`hover:text-black transition-colors ${currentPage === 'writing' ? 'text-black' : 'text-neutral-500'}`}
+          className={`hover:text-black transition-colors ${currentPage === "writing" ? "text-black" : "text-neutral-500"}`}
         >
           writing
         </a>

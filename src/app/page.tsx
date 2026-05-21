@@ -1,19 +1,18 @@
 "use client";
 
-import { PageLayout } from '@/components/PageLayout';
-import Link from 'next/link';
-import Image from 'next/image';
-import { usePathname } from 'next/navigation';
-import { useState, useEffect } from 'react';
-import { ArrowUpRight, Plus } from 'lucide-react';
+import { PageLayout } from "@/components/PageLayout";
+import Link from "next/link";
+import Image from "next/image";
+import { useState, useEffect } from "react";
+import { ArrowUpRight, Plus } from "lucide-react";
 
 export default function Home() {
-  const [age, setAge] = useState<string>('0');
+  const [age, setAge] = useState<string>("0");
   const [expandedImage, setExpandedImage] = useState<number>(0);
 
   useEffect(() => {
     const calculateAge = () => {
-      const birthDate = new Date('2006-06-22T03:00:00');
+      const birthDate = new Date("2006-06-22T03:00:00");
       const now = new Date();
       const ageInMilliseconds = now.getTime() - birthDate.getTime();
       const ageInYears = ageInMilliseconds / (1000 * 60 * 60 * 24 * 365.25);
@@ -24,7 +23,7 @@ export default function Home() {
 
     const interval = setInterval(() => {
       setAge(calculateAge());
-    }, 100); 
+    }, 100);
 
     return () => clearInterval(interval);
   }, []);
@@ -36,63 +35,124 @@ export default function Home() {
         </div>
         <div className="pt-1">
           <p>
-            Currently CEO @ <Link href="https://freesolo.co" target="_blank" rel="noopener noreferrer" className="link">Freesolo</Link>
+            Currently CEO @{" "}
+            <Link
+              href="https://freesolo.co"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="link"
+            >
+              Freesolo
+            </Link>
           </p>
         </div>
         <div className="pt-4">
           <p>
-            I scaled <Link href="https://clado.ai" target="_blank" rel="noopener noreferrer" className="link">Clado</Link> to over 300k ARR selling to data labellers and recruiters before realizing our growth rate was too low and pivoting.
+            I scaled{" "}
+            <Link
+              href="https://clado.ai"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="link"
+            >
+              Clado
+            </Link>{" "}
+            to over 300k ARR selling to data labellers and recruiters before
+            realizing our growth rate was too low and pivoting.
           </p>
         </div>
         <div className="pt-4">
           <p>
-            I previously spent one semester at UPenn M&T studying Computer Science + Business before leaving
-            for the <Link href="https://ycombinator.com" target="_blank" rel="noopener noreferrer" className="link">Y Combinator</Link> X25 Batch.
+            I previously spent one semester at UPenn M&T studying Computer
+            Science + Business before leaving for the{" "}
+            <Link
+              href="https://ycombinator.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="link"
+            >
+              Y Combinator
+            </Link>{" "}
+            X25 Batch.
           </p>
         </div>
         <div className="pt-4">
           <p className="mb-4">Angel investments (friends):</p>
 
-
-          <Link href="https://shofo.ai" target="_blank" rel="noopener noreferrer" className="block">
+          <Link
+            href="https://shofo.ai"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block"
+          >
             <div className="flex justify-between py-3 border-t border-neutral-200 hover:bg-stone-100 transition-colors">
-              <div className="font-medium text-black flex items-center whitespace-nowrap mr-4">shofo <ArrowUpRight className="ml-1" size={16} /></div>
+              <div className="font-medium text-black flex items-center whitespace-nowrap mr-4">
+                shofo <ArrowUpRight className="ml-1" size={16} />
+              </div>
               <div className="max-w-xs text-right">
                 <p className="text-sm text-neutral-500">pre-seed</p>
               </div>
             </div>
           </Link>
 
-          <Link href="https://blueprint.mov" target="_blank" rel="noopener noreferrer" className="block">
+          <Link
+            href="https://blueprint.mov"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block"
+          >
             <div className="flex justify-between py-3 border-t border-neutral-200 hover:bg-stone-100 transition-colors">
-              <div className="font-medium text-black flex items-center whitespace-nowrap mr-4">blueprint <ArrowUpRight className="ml-1" size={16} /></div>
+              <div className="font-medium text-black flex items-center whitespace-nowrap mr-4">
+                blueprint <ArrowUpRight className="ml-1" size={16} />
+              </div>
               <div className="max-w-xs text-right">
                 <p className="text-sm text-neutral-500">first check</p>
               </div>
             </div>
           </Link>
 
-          <Link href="https://a37.ai" target="_blank" rel="noopener noreferrer" className="block">
+          <Link
+            href="https://a37.ai"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block"
+          >
             <div className="flex justify-between py-3 border-t border-neutral-200 hover:bg-stone-100 transition-colors">
-              <div className="font-medium text-black flex items-center whitespace-nowrap mr-4">a37 <ArrowUpRight className="ml-1" size={16} /></div>
+              <div className="font-medium text-black flex items-center whitespace-nowrap mr-4">
+                a37 <ArrowUpRight className="ml-1" size={16} />
+              </div>
               <div className="max-w-xs text-right">
                 <p className="text-sm text-neutral-500">seed</p>
               </div>
             </div>
           </Link>
 
-          <Link href="https://photon.codes" target="_blank" rel="noopener noreferrer" className="block">
+          <Link
+            href="https://photon.codes"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block"
+          >
             <div className="flex justify-between py-3 border-t border-neutral-200 hover:bg-stone-100 transition-colors">
-              <div className="font-medium text-black flex items-center whitespace-nowrap mr-4">photon codes <ArrowUpRight className="ml-1" size={16} /></div>
+              <div className="font-medium text-black flex items-center whitespace-nowrap mr-4">
+                photon codes <ArrowUpRight className="ml-1" size={16} />
+              </div>
               <div className="max-w-xs text-right">
                 <p className="text-sm text-neutral-500">seed</p>
               </div>
             </div>
           </Link>
 
-          <Link href="https://www.trychert.com/" target="_blank" rel="noopener noreferrer" className="block">
+          <Link
+            href="https://www.trychert.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block"
+          >
             <div className="flex justify-between py-3 border-t border-neutral-200 hover:bg-stone-100 transition-colors">
-              <div className="font-medium text-black flex items-center whitespace-nowrap mr-4">chert <ArrowUpRight className="ml-1" size={16} /></div>
+              <div className="font-medium text-black flex items-center whitespace-nowrap mr-4">
+                chert <ArrowUpRight className="ml-1" size={16} />
+              </div>
               <div className="max-w-xs text-right">
                 <p className="text-sm text-neutral-500">pre-seed</p>
               </div>
@@ -100,12 +160,13 @@ export default function Home() {
           </Link>
 
           <div className="flex justify-between py-3 border-t border-b border-neutral-200">
-            <div className="font-medium text-black flex items-center whitespace-nowrap mr-4">stealth</div>
+            <div className="font-medium text-black flex items-center whitespace-nowrap mr-4">
+              stealth
+            </div>
             <div className="max-w-xs text-right">
               <p className="text-sm text-neutral-500">pre-seed</p>
             </div>
           </div>
-
         </div>
       </div>
 
@@ -115,15 +176,27 @@ export default function Home() {
             <div
               key={index}
               className={`relative cursor-pointer rounded-lg overflow-hidden transition-all duration-300 ${
-                expandedImage === index 
-                  ? 'flex-[3]' 
-                  : 'flex-[0.5] opacity-80 hover:opacity-100'
+                expandedImage === index
+                  ? "flex-[3]"
+                  : "flex-[0.5] opacity-80 hover:opacity-100"
               }`}
               onClick={() => setExpandedImage(index)}
             >
               <Image
-                src={index === 0 ? "/Photo.jpg" : index === 1 ? "/Photo2.jpg" : "/Photo3.jpg"}
-                alt={index === 0 ? "Eric Mao's profile" : index === 1 ? "Clado team photo" : "Presentation photo"}
+                src={
+                  index === 0
+                    ? "/Photo.jpg"
+                    : index === 1
+                      ? "/Photo2.jpg"
+                      : "/Photo3.jpg"
+                }
+                alt={
+                  index === 0
+                    ? "Eric Mao's profile"
+                    : index === 1
+                      ? "Clado team photo"
+                      : "Presentation photo"
+                }
                 fill
                 className="object-cover object-center"
                 priority={index === 0}
