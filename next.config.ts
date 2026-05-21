@@ -1,21 +1,10 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  /* config options here */
-  output: 'export', // Enable static exports
-  eslint: {
-    // we use biome for linting
-    ignoreDuringBuilds: true,
-  },
+import type { NextConfig } from "next";
+
+const nextConfig: NextConfig = {
+  output: "export",
   images: {
-    unoptimized: true, // Required for static export
-    formats: ['image/avif', 'image/webp'],
-    domains: [
-      "source.unsplash.com",
-      "images.unsplash.com",
-      "ext.same-assets.com",
-      "ugc.same-assets.com",
-      "ghchart.rshah.org"
-    ],
+    unoptimized: true,
+    formats: ["image/avif", "image/webp"],
     remotePatterns: [
       {
         protocol: "https",
@@ -44,10 +33,7 @@ const nextConfig = {
       },
     ],
   },
-  typescript: {
-    ignoreBuildErrors: true,
-  },
-  assetPrefix: '/',
+  assetPrefix: "/",
 };
 
-module.exports = nextConfig;
+export default nextConfig;

@@ -1,10 +1,10 @@
 "use client";
 
-import Link from 'next/link';
-import { useState } from 'react';
+import Link from "next/link";
+import { useState } from "react";
 
 export function Footer() {
-  const email = 'eric@freesolo.co';
+  const email = "eric@freesolo.co";
   const [copied, setCopied] = useState(false);
 
   const handleCopyEmail = async () => {
@@ -54,12 +54,8 @@ export function Footer() {
       </div>
       <div className="flex justify-between items-center py-1 border-t border-neutral-200">
         <span>Email</span>
-        <button
-          type="button"
-          onClick={handleCopyEmail}
-          className="link"
-        >
-          {copied ? 'copied!' : email}
+        <button type="button" onClick={handleCopyEmail} className="link">
+          {copied ? "copied!" : email}
         </button>
       </div>
     </footer>
