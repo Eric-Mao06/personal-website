@@ -35,34 +35,6 @@ export default function Home() {
         </div>
         <div className="pt-1">
           <p>
-            Currently CEO @{" "}
-            <Link
-              href="https://freesolo.co"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="link"
-            >
-              Freesolo
-            </Link>
-          </p>
-        </div>
-        <div className="pt-4">
-          <p>
-            I scaled{" "}
-            <Link
-              href="https://clado.ai"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="link"
-            >
-              Clado
-            </Link>{" "}
-            to over 300k ARR selling to data labellers and recruiters before
-            realizing our growth rate was too low and pivoting.
-          </p>
-        </div>
-        <div className="pt-4">
-          <p>
             I previously spent one semester at UPenn M&T studying Computer
             Science + Business before leaving for the{" "}
             <Link

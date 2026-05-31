@@ -6,8 +6,6 @@ test.describe("portfolio home page", () => {
 
     await expect(page.getByRole("heading", { name: "Eric Mao" })).toBeVisible();
     await expect(page.getByText(/years old/)).toBeVisible();
-    await expect(page.getByRole("link", { name: "Freesolo" })).toBeVisible();
-    await expect(page.getByRole("link", { name: "Clado" })).toBeVisible();
     await expect(page.getByRole("link", { name: "writing" })).toBeVisible();
     await expect(page.getByRole("link", { name: "@ericmao" })).toBeVisible();
     await expect(
