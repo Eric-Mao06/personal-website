@@ -22,12 +22,12 @@ export function Footer() {
       <div className="flex justify-between items-center py-1 border-t border-neutral-200">
         <span>Twitter</span>
         <Link
-          href="https://x.com/ericmao"
+          href="https://x.com/EricMao06"
           target="_blank"
           rel="noopener noreferrer"
           className="link"
         >
-          @ericmao
+          @EricMao06
         </Link>
       </div>
       <div className="flex justify-between items-center py-1 border-t border-neutral-200">
